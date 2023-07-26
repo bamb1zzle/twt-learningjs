@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Tutorial 7</title>
+</head>
+<body>
+    <h1 id="header">Hello</h1>
+    <input type="text" id="inp"/>
+    <button onClick="pressed()">Click</button>
+    <button onClick="pressed2()">click2</button>
+
+    <script>
+        function pressed() {
+        let text = document.getElementById('inp').value;
+        if (text == "red") {
+            document.getElementById('header').style.color ="red";
+        }else if(text==='green'){
+            document.getElementById('header').style.color='green';
+        }
+        else{
+            document.getElementById('header').style.color='black';
+        }
+
+        function pressed2() {
+            document.getElementById('header').style.color=(document.getElementById('inp').value);
+        };
+    }
+    </script>
+    
+</body>
+</html>
+
+<!-- How do i insert the value of a variable inside of these statements. -->

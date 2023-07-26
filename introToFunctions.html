@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial 6</title>
+</head>
+<body>
+    <h1 id="header">Hello</h1>
+    <button id="redButton" onclick="red()">Red</button>
+    <button id="greenButton" onclick="green()">Green</button>
+    
+    
+    <script type="text/javascript">
+        function red(){
+            document.getElementById("header").innerHTML="Red"
+            document.getElementById('header').style.color="red"
+            document.getElementById('redButton').style.color="white"
+            document.getElementById('redButton').style.backgroundColor="red"
+            document.getElementById('greenButton').style.color="black"
+            document.getElementById('greenButton').style.backgroundColor="grey"
+        }
+
+        function green(){
+            document.getElementById("header").innerHTML="Green"
+            document.getElementById('header').style.color="green"
+            document.getElementById('greenButton').style.color="white"
+            document.getElementById('greenButton').style.backgroundColor="green"
+            document.getElementById('redButton').style.color="black"
+            document.getElementById('redButton').style.backgroundColor='grey'
+        }
+    </script>
+</body>
+</html>
+
+<!-- Function is a piece/block of code that does something.
+Must call function inorder for it to work. e.g. add() 
+Paramaters - the information i need to pass to my function 
+return statement - returns value vs printing something.
+Arguements is what you pass through to your function, it is the parameters.
+-->
