@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial 9</title>
+</head>
+<body>
+    <h1 id="header">Type Something</h1>
+    <input type="text" id="inp" />
+    <button onclick="pressed()">Submit</button>
+    <p id="output"></p>
+
+    <script>
+        function pressed() {
+            let text = document.getElementById("inp").value;
+            output.innerHTML= text.trim().toUpperCase();
+        }
+    </script>
+    
+</body>
+</html>
+
+<!-- 
+toUpperCase - Alll uppercase
+toLowerCase - all lowercase
+endsWith("what you want it to end with" = returns boolean value) 
+trim() - trims the white space/blanks
+startsWith()
+.length - how long is the string.
+All these methods create a new string that gets stored in the innnerHTML content. doesn't alter the text.
+-->

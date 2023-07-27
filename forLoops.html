@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial 12</title>
+</head>
+<body>
+    <script>
+        
+        for (let i =0; i < 10; i++){
+            console.log(i)
+            if ( i == 7) {
+                break
+            }
+        }
+
+        /*Step 1: Define a variable and set it to an intiial value.
+        This will be the value that we start looping at.
+        Step 2: Condition used to run for Loop.
+        Must involve variable we stated at the start.
+        Step 3: Increment.
+        How much to add to variable after the loop successfully completes.
+        */
+
+        function findInArray(arr, value) {
+            for (let h = 0; h<arr.length; h++){
+                if(arr[h] == value) {
+                    console.log(arr[h])
+                    break
+                }
+                console.log(arr[h])
+            } 
+        }
+
+        array1 = ["james","matthew","jesus","mateo"]
+
+        function findInArrayTim(arr, value) {
+            for (let j = 0; j < arr.length; j++){
+                if (arr[j]== value) {
+                    return true
+                }
+            }
+            return false
+        }
+
+        findInArray(array1, "mateo")
+        console.log(findInArrayTim(array1, 5))
+
+        function nsquared(n) {
+            for (let x = 0; x < n; x++ ){
+                for (let y =0; y<n; y++){
+                    console.log("run")
+                }
+            }
+        }
+
+        nsquared(5)
+
+    </script>
+    
+</body>
+</html>

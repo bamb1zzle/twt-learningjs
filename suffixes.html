@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suffixes</title>
+</head>
+<body>
+    <a href="https://stackoverflow.com/questions/45069514/check-if-string-ends-with-any-of-multiple-characters">Link to Question</a>
+    <p id="demo">default</p>
+
+    <script>
+
+
+        function endsWithAny(suffixes, string) {
+        return suffixes.some( function (suffix) {
+            return string.endsWith(suffix);
+        });
+        }
+
+        /* Runs through all of the suffixes one by one from the previous function suffixes.some
+        and thus considers each one of the items in the array as an argument. that is our suffix variable.
+        then it returns if string.endsWith(that suffix)
+        */
+
+        function myFunction() {
+            var str = "Hello?";
+            var n = endsWithAny([".", "!", "?"], str);
+            document.getElementById("demo").innerHTML = n;
+        }
+
+        myFunction()
+    </script>
+</body>
+</html>

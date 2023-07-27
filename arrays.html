@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial 10</title>
+</head>
+<body>
+    <script>
+        let arr = ["hello", 5, 4.6, "tim"];
+        // let arr1 = new Array(50) = [...... x50 blank elements]
+        console.log(arr)
+        console.log(arr[1])
+        console.log(arr[5])
+        // if you do an index for an element not in the array it will present undefined.
+        arr[2] = "new element"
+        console.log(arr[2])
+        document.write(arr[2])
+
+        console.log(arr.pop())
+        //pop() takes out the last item in the array. removes and returns it to the console line.
+        console.log(arr.push("shift"))
+        console.log(arr)
+
+        arr.sort()
+        console.log(arr)
+
+        //sort() sorts the array into alphabetical order.
+
+        arr[9] = 5
+        console.log(arr)
+
+        // puts something in the index 9 but we have empty indexes now.
+    </script>
+</body>
+</html>
