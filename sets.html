@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial 14</title>
+</head>
+<body>
+        <script>
+            let _set = new Set()
+            _set.add(3).add(5).add(7).add(3)
+            console.log(_set.has(5))
+
+            for (let entry of _set.values()) {
+                console.log(entry)
+            }
+
+
+        </script>
+
+<!-- 
+Sets are another data type in javascript.
+Unordered collection of unique elements.
+Collection -> multiple elements.
+Unordered -> We don't keep track of the elements. (But we do)
+Unique -> no elements can exist more than once.
+
+We cannot index elements directly. We can only see if elements exist, add or delete elements.
+Can add the same element multiple times but can only exist there once.
+When we use sets we only care if elements exist. We don't care about frequency.
+Sets have 01 look up time = instant search time.
+
+When to use sets vs array?
+If array is too big and we just need to see an element. 
+Maintains constant look up time. 
+set.has()
+set.size
+set.delete() - when you delete somethign that doesn't exist in the set you get a false return statement.
+set.values() - returns to us all of the values inside of the set in the order they were inserted.
+ -->
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial 15</title>
+</head>
+<body>
+    <script>
+        let mp = new Map()
+        str ="this is my new string hello"
+
+        for (let letter of str){
+            if (mp.has(letter)){
+                mp.set(letter, mp.get(letter)+1)
+            } else{
+                mp.set(letter, 1)
+            }
+        }
+
+        console.log(mp)
+        console.log(mp.get("t"))
+
+
+        let mp2 = new Map(
+            [  
+                ["t", 5],
+                ["v",8]
+            ]
+        )
+        
+        for (let entry of mp2){
+            console.log(entry[0])
+            console.log(entry[1])
+        }
+        // looping through array
+
+        // console.log(mp2.get("t"))
+    </script>
+    
+</body>
+</html>
+<!-- 
+more elements we have in ana array it takes more time to add or delete.
+array benefits - keep track of the order elements are added and have access to them using indexes.
+Map holds "key value pairs." i.e. ["hi", 1], key is what we use to access different values.
+Map is instant time to do everything. 
+Access keys using .get() put the key in, get the value associated with it.
+.set(key,value) adds to the map. Overrides whatever is the previous key if same key identifier.
+.delete("")
+.has("") - boolean reply. 
+.clear() - clears all of the items in the map.
+.entries() - gets all the different entries.
+  -->
