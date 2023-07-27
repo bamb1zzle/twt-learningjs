@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial 16</title>
+</head>
+<body>
+    <script>
+        function add5(num){
+            num += 5
+            console.log(num)
+        }
+
+        let x = 5
+        add5(x)
+        console.log(x)
+
+        function append5(arr){
+            arr.push(5)
+            console.log(arr)
+        }
+
+        let arr = [1,2,3,4]
+        append5(arr)
+        console.log(arr)
+
+        let arr1 = arr.slice()
+        // copies the entire array value by value if no parameters
+        let arr2 =[...arr1]
+        console.log(arr2)
+
+    </script>
+</body>
+</html>
+
+mutability - changeable/unchangeable
+primitive data types and objects. 
+
+var x = 5
+var z = []
+var s = z
+
+when i change anything in s it changes z and vice versa because these reference the same object 
+doesnt store the value of the array but stores the array as one object in total.
+
+primitive data types = dont change. 
+we are just referencing values.
+
+inside our function = num = x - creates a copy but doesnt change the underlying value of this primitive data type variable. 
+
+Reference and Object Data types (Copying vs Reference Points)
+
+Passing in entire array. And push 5 onto array and print out the value of the array. Passed the actual object. Not a copy of it. 
+When we pass the array it changes the object. 
+
+Design funcions that dont need to return certain values but just modify the input you've sent them.
+
+When we create a variable thats equal to the object. We don't store the value of the object but the location of the object instead.
