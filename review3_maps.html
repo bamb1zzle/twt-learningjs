@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maps</title>
+</head>
+<body>
+    <script>
+        let mp = new Map()
+        str = "this is the way to the queen"
+
+        for (let letter of str) {
+            if (mp.has(letter)) {
+                mp.set(letter, mp.get(letter)+1)
+            } else (mp.set(letter,1))
+        }
+
+        console.log(mp)
+        console.log(mp.get("t"))
+        console.log(mp.delete("i"))
+        console.log(mp)
+
+        let mp2 = new Map([
+            ["j",5],
+            ["kk",7]
+        ]
+        );
+
+        for (let entry of mp2){
+            console.log(entry[0])
+            console.log(entry[1])
+
+        }
+    </script>
+</body>
+</html>
+
+Make sure when making a new map that you put in the [] array when there is values to be inserted. 

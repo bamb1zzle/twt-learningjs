@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mutability</title>
+</head>
+<body>
+    <script>
+        let x = 5
+        let y = [1,2,3,4,5]
+        let z = y
+
+        function add5(num) {
+            num += 5;
+            console.log(num)
+        }
+
+        
+        add5(x)
+        console.log(x)
+        
+
+        console.log(z)
+
+        function addme(j) {
+
+            y.push(j)
+            console.log(y)
+        }
+
+        addme(7)
+
+        console.log(z)
+    </script>
+    
+</body>
+</html>
